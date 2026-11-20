@@ -1,0 +1,6 @@
+# Preserve exact byte sequences of CAD models used for review checksums.
+*.mpd -text whitespace=cr-at-eol,-blank-at-eol
+*.csv -text whitespace=cr-at-eol
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf

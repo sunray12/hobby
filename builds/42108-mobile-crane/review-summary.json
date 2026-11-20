@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "mpd_sha256": "db3534b399ee5609355b6428195a09e7330adfabe6e1dee42df79af624152572",
+  "standard": {
+    "exit_code": 0,
+    "stages": {
+      "validation": "passed",
+      "bom": "passed",
+      "render": "passed",
+      "bom_comparison": "passed"
+    },
+    "physical_placements": 1291,
+    "renderer_placements": 1291,
+    "bom_differences": [],
+    "views_inspected": [
+      "home",
+      "top",
+      "front",
+      "left",
+      "right"
+    ]
+  },
+  "full_contact_scan": {
+    "checks_passed": false,
+    "contacts_checked": true,
+    "contact_candidates": 3119,
+    "optimistic_groups": 466,
+    "overlap_candidates": 2736,
+    "deep_overlap_warnings": 28,
+    "errors": [
+      {
+        "code": "technic.invalid_seating",
+        "message": "Aligned interfaces fail engagement: the hole runs past the end of the pin or axle; move it along the axis or use a longer one.",
+        "severity": "error",
+        "instances": [
+          551,
+          506
+        ],
+        "ports": [
+          [
+            "technic:shaft",
+            "technic:hole-4"
+          ]
+        ],
+        "rules": [
+          "engagement: the hole runs past the end of the pin or axle; move it along the axis or use a longer one"
+        ]
+      }
+    ],
+    "seating_parts": [
+      {
+        "occurrence": 551,
+        "part": "32073.dat",
+        "line": 1811
+      },
+      {
+        "occurrence": 506,
+        "part": "32524.dat",
+        "line": 1635
+      }
+    ],
+    "physical_validity": "not_proven"
+  }
+}
